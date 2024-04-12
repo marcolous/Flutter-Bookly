@@ -33,6 +33,8 @@ dependencies:
     sdk: flutter
   gap: ^3.0.1
   get: ^4.6.6
+  google_fonts: ^6.1.0
+  #google_fonts: ^6.2.0
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
