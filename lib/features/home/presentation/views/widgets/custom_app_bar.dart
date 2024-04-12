@@ -2,43 +2,35 @@ import 'package:bookly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar(
-      {super.key, required this.icon, this.color, required this.onPressed});
-  final Icon icon;
-  final Color? color;
-  final void Function()? onPressed;
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(
-          height: 100,
-          width: 100,
-          child: Image.asset(AssetsData.logo),
-        ),
-        const Spacer(),
-        CustomIcon(
-          icon: icon,
-          color: color,
-          onPressed: onPressed,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 32, right: 32, top: 8),
+      child: Row(
+        children: [
+          SizedBox(
+            height: 100,
+            width: 100,
+            child: Image.asset(AssetsData.logo),
+          ),
+          const Spacer(),
+          const CustomIcon(),
+        ],
+      ),
     );
   }
 }
 
 class CustomIcon extends StatelessWidget {
-  const CustomIcon(
-      {super.key, required this.icon, this.color, required this.onPressed});
-  final Icon icon;
-  final Color? color;
-  final void Function()? onPressed;
+  const CustomIcon({super.key});
+
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: onPressed,
-      icon: icon,
+      onPressed: () {},
+      icon: const Icon(Icons.search_rounded, color: Colors.white),
       iconSize: 32,
     );
   }
