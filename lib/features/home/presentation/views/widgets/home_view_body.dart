@@ -19,7 +19,7 @@ class HomeViewBody extends StatelessWidget {
         const Gap(20),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 32),
-          child: Text('Best Seller', style: Styles.titleMedium),
+          child: Text('Best Seller', style: Styles.textStyle18),
         ),
         const Gap(20),
         Padding(
