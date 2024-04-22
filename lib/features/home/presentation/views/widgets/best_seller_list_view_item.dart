@@ -1,6 +1,7 @@
 import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
+import 'package:bookly/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -47,11 +48,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         style: Styles.textStyle20
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
-                      const Gap(3),
-                      Icon(Icons.star_rate_rounded, color: Colors.yellow[700]),
-                      const Text('4.8'),
-                      const Gap(10),
-                      const Text('(2200)'),
+                      const BookRating(),
                     ],
                   ),
                 ],
@@ -63,3 +60,4 @@ class BestSellerListViewItem extends StatelessWidget {
     );
   }
 }
+
