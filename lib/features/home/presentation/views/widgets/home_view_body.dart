@@ -70,7 +70,10 @@ class BestSellerListViewItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('title'),
+                  const Text(
+                    'title',
+                    style: Styles.textStyle20,
+                  ),
                   const Text('auther'),
                   Row(
                     children: [
