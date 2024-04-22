@@ -73,6 +73,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   const Text(
                     'title',
                     style: Styles.textStyle20,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   const Text('auther'),
                   Row(
