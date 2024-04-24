@@ -2,12 +2,12 @@ import 'package:bookly/features/home/presentation/views/widgets/custom_book_item
 import 'package:flutter/material.dart';
 
 class FeaturedBooksListView extends StatelessWidget {
-  const FeaturedBooksListView({super.key});
-
+  const FeaturedBooksListView({super.key, required this.height});
+  final double height;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * 0.3,
+      height: MediaQuery.of(context).size.height * height,
       child: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 32),
         scrollDirection: Axis.horizontal,
