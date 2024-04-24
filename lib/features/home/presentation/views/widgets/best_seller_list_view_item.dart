@@ -3,7 +3,6 @@ import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
@@ -45,7 +44,7 @@ class BestSellerListViewItem extends StatelessWidget {
                           .copyWith(fontFamily: kGTSectraFine),
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const Text('auther'),
+                    const Opacity(opacity: .7, child: Text('auther')),
                     Row(
                       children: [
                         Text(
