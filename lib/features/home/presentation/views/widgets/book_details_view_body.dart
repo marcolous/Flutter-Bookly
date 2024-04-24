@@ -30,10 +30,9 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           const Gap(4),
           const Opacity(
-              opacity: .7,
-              child: Text('Title', style: Styles.textStyle18)),
+              opacity: .7, child: Text('Title', style: Styles.textStyle18)),
           const Gap(14),
-          const BookRating(),
+          const BookRating(mainAxisAlignment: MainAxisAlignment.center),
         ],
       ),
     );

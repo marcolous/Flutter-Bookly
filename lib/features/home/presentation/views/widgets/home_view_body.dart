@@ -30,7 +30,6 @@ class HomeViewBody extends StatelessWidget {
                 child: Text('Best Seller', style: Styles.textStyle18),
               ),
               Gap(20),
-              //BestSellerListView()
             ],
           ),
         ),

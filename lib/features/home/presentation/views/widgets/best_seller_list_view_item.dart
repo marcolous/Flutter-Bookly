@@ -35,7 +35,7 @@ class BestSellerListViewItem extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 32),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  //mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
