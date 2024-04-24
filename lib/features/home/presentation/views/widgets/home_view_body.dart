@@ -1,7 +1,5 @@
 // ignore_for_file: sized_box_for_whitespace
 
-import 'package:bookly/constants.dart';
-import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_app_bar.dart';
