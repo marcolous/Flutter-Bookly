@@ -1,4 +1,5 @@
 import 'package:bookly/constants.dart';
+import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_rating.dart';
@@ -12,7 +13,7 @@ class BestSellerListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push('/bookDetailsView');
+        GoRouter.of(context).push(AppRouter.kBookDetailsView);
       },
       child: Padding(
         padding: const EdgeInsets.only(bottom: 15),

@@ -1,4 +1,5 @@
 import 'package:bookly/constants.dart';
+import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:bookly/features/home/presentation/views/home_view.dart';
 import 'package:bookly/features/splash/presentation/views/widgets/sliding_text.dart';
@@ -60,8 +61,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   // navigate to home page using fadeIn animation
   void navigateToHome() {
     Future.delayed(kTransitionDuration, () {
-      //Get.to(() => const HomeView(), transition: Transition.fadeIn);
-      GoRouter.of(context).push('/homeView');
+      GoRouter.of(context).push(AppRouter.kHomeView);
     });
   }
 }
