@@ -13,52 +13,61 @@ class BookDetailsViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-    return ListView(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+    return CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const CustomBookDetailsAppBar(),
               Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: width * 0.25, vertical: 35),
-                child: const CustomBookItem(),
+                padding: const EdgeInsets.symmetric(horizontal: 30),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const CustomBookDetailsAppBar(),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: width * 0.25, vertical: 35),
+                      child: const CustomBookItem(),
+                    ),
+                    //const Gap(43),
+                    const Text(
+                      'The Jungle Book',
+                      style: Styles.textStyle30,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const Gap(4),
+                    const Opacity(
+                        opacity: .7,
+                        child:
+                            Text('Rudyard Kipling', style: Styles.textStyle18)),
+                    const Gap(14),
+                    const BookRating(
+                        mainAxisAlignment: MainAxisAlignment.center),
+                    const Gap(37),
+                    const BooksAction(text: "19.99€"),
+                  ],
+                ),
               ),
-              //const Gap(43),
-              const Text(
-                'The Jungle Book',
-                style: Styles.textStyle30,
-                overflow: TextOverflow.ellipsis,
-              ),
-              const Gap(4),
-              const Opacity(
-                  opacity: .7,
-                  child: Text('Rudyard Kipling', style: Styles.textStyle18)),
-              const Gap(14),
-              const BookRating(mainAxisAlignment: MainAxisAlignment.center),
-              const Gap(37),
-              const BooksAction(text: "19.99€"),
-              const Gap(50),
+              const Expanded(child: Gap(50)),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30),
+                    child: Text(
+                      "You may also like",
+                      style: Styles.textStyle14
+                          .copyWith(fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  const Gap(15),
+                  const FeaturedBooksListView(
+                    height: .17,
+                  ),
+                ],
+              )
             ],
           ),
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 30),
-              child: Text(
-                "You may also like",
-                style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w600),
-              ),
-            ),
-            const Gap(15),
-            const FeaturedBooksListView(
-              height: .17,
-            ),
-          ],
         )
       ],
     );
