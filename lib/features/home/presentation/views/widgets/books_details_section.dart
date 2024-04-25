@@ -23,8 +23,8 @@ class BookDetailsSection extends StatelessWidget {
         children: [
           const CustomBookDetailsAppBar(),
           Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: width * 0.25, vertical: 35),
+            padding:
+                EdgeInsets.symmetric(horizontal: width * 0.25, vertical: 35),
             child: const CustomBookItem(),
           ),
           const Text(
@@ -35,11 +35,9 @@ class BookDetailsSection extends StatelessWidget {
           const Gap(4),
           const Opacity(
               opacity: .7,
-              child:
-                  Text('Rudyard Kipling', style: Styles.textStyle18)),
+              child: Text('Rudyard Kipling', style: Styles.textStyle18)),
           const Gap(14),
-          const BookRating(
-              mainAxisAlignment: MainAxisAlignment.center),
+          const BookRating(mainAxisAlignment: MainAxisAlignment.center),
           const Gap(37),
           const BooksAction(text: "19.99€"),
         ],
