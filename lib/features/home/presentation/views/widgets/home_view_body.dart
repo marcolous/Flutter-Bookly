@@ -1,7 +1,7 @@
 // ignore_for_file: sized_box_for_whitespace
 
 import 'package:bookly/core/utils/styles.dart';
-import 'package:bookly/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
+import 'package:bookly/features/home/presentation/views/widgets/book_list_view_item.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:bookly/features/home/presentation/views/widgets/featured_books_list_view.dart';
 import 'package:flutter/material.dart';
@@ -56,7 +56,7 @@ class BestSellerListView extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 10),
         itemCount: 10,
         itemBuilder: (context, index) {
-          return const BestSellerListViewItem();
+          return const BookListViewItem();
         },
       ),
     );
