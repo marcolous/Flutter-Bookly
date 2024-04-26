@@ -20,7 +20,10 @@ class HomeRepoImpl extends HomeRepo {
       }
       return right(books);
     } catch (e) {
-      return left(ServerFailure());
+      if (e is DioError) {
+        return left(ServerFailure.fromDioError(e));
+      }
+      return left(ServerFailure(errMessage: e.toString()));
     }
   }
 
