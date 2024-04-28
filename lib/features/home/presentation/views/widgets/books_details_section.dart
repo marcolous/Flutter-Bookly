@@ -38,7 +38,11 @@ class BookDetailsSection extends StatelessWidget {
               opacity: .7,
               child: Text('Rudyard Kipling', style: Styles.textStyle18)),
           const Gap(14),
-          const BookRating(mainAxisAlignment: MainAxisAlignment.center),
+          const BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
+            count: '0',
+            rating: '0',
+          ),
           const Gap(37),
           const BooksAction(text: "19.99€"),
         ],

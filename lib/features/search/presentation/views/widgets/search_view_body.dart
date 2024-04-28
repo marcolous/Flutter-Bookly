@@ -1,11 +1,12 @@
-import 'package:bookly/features/home/presentation/views/widgets/book_list_view_item.dart';
+import 'package:bookly/features/home/data/models/book_model/book_model.dart';
+import 'package:bookly/features/home/presentation/views/widgets/newest_book_list_view_item.dart';
 import 'package:bookly/features/search/presentation/views/widgets/custom_text_search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class SearchViewBody extends StatelessWidget {
-  const SearchViewBody({super.key});
-
+  const SearchViewBody({super.key, required this.bookModel});
+  final List<BookModel> bookModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -20,7 +21,9 @@ class SearchViewBody extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 10),
               itemCount: 10,
               itemBuilder: (context, index) {
-                return const BookListViewItem();
+                return BookListViewItem(
+                  bookModel: bookModel[index],
+                );
               },
             ),
           ),
