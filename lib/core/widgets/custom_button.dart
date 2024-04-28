@@ -11,6 +11,7 @@ class CustomButton extends StatelessWidget {
     this.foregroundColor = Colors.black,
     this.style,
     required this.text,
+    required this.onPressed,
   });
   final Radius topLeft;
   final Radius topRight;
@@ -20,6 +21,7 @@ class CustomButton extends StatelessWidget {
   final Color? foregroundColor;
   final TextStyle? style;
   final String text;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -37,7 +39,7 @@ class CustomButton extends StatelessWidget {
             ),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           text,
           style: style,

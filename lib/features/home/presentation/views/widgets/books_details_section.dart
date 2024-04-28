@@ -1,7 +1,7 @@
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/data/models/book_model/book_model.dart';
 import 'package:bookly/features/home/presentation/views/widgets/book_rating.dart';
-import 'package:bookly/features/home/presentation/views/widgets/books_action.dart';
+import 'package:bookly/features/home/presentation/views/widgets/books_button_action.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
 import 'package:bookly/features/home/presentation/views/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
@@ -52,8 +52,8 @@ class BookDetailsSection extends StatelessWidget {
             count: bookModel.volumeInfo?.ratingsCount ?? '0',
             rating: bookModel.volumeInfo?.averageRating ?? '0',
           ),
-          const Gap(37),
-          const BooksAction(text: "Free"),
+          const Gap(15),
+          BooksButtonAction(text: "Free", bookModel: bookModel),
         ],
       ),
     );
