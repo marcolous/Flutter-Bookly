@@ -17,20 +17,24 @@ class FeaturedBooksListView extends StatelessWidget {
             height: MediaQuery.of(context).size.height * height,
             child: ListView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 32),
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
-              itemCount: 10,
+              itemCount: state.books.length,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.only(right: 16),
-                  child: CustomBookItem(),
+                return Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: CustomBookItem(
+                    imageUrl: (state
+                            .books[index].volumeInfo?.imageLinks?.thumbnail) ??
+                        'https://www.freeiconspng.com/img/23485',
+                  ),
                 );
               },
             ),
           );
         } else if (state is FeaturedBooksFailure) {
           return CustomErrorWidget(errMessage: state.errMessage);
-        } 
-        else {
+        } else {
           return const CustomLoadingIndicator();
         }
       },
