@@ -1,5 +1,5 @@
 import 'package:bookly/core/utils/styles.dart';
-import 'package:bookly/features/home/presentation/views/widgets/featured_books_list_view.dart';
+import 'package:bookly/features/home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -21,10 +21,9 @@ class YouMayAlsoLikeSection extends StatelessWidget {
           ),
         ),
         const Gap(15),
-        const FeaturedBooksListView(
-          height: .17,
-        ),
+        const SimilarBooksListView(),
       ],
     );
   }
 }
+

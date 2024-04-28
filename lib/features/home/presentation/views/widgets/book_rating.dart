@@ -23,7 +23,7 @@ class BookRating extends StatelessWidget {
         const Gap(10),
         Opacity(
           opacity: .5,
-          child: Text('$count'),
+          child: Text('($count)'),
         ),
       ],
     );

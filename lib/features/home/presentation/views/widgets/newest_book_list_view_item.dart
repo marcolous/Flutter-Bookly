@@ -14,7 +14,7 @@ class BookListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kBookDetailsView);
+        GoRouter.of(context).push(AppRouter.kBookDetailsView, extra: bookModel);
       },
       child: Padding(
         padding: const EdgeInsets.only(bottom: 15),
@@ -51,7 +51,7 @@ class BookListViewItem extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            (bookModel.saleInfo?.listPrice?.amount).toString(),
+                            'Free',
                             style: Styles.textStyle20
                                 .copyWith(fontWeight: FontWeight.bold),
                           ),
