@@ -1,10 +1,11 @@
 import 'package:bookly/core/errors/failure.dart';
 import 'package:bookly/features/home/domain/repo/home_repo.dart';
 import 'package:bookly/features/home/domain/entities/book_entity.dart';
+import 'package:bookly/features/home/domain/use_cases/use_case.dart';
 import 'package:dartz/dartz.dart';
 
 class FeatchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
-   final HomeRepo homeRepo;
+  final HomeRepo homeRepo;
 
   FeatchFeaturedBooksUseCase({required this.homeRepo});
 
@@ -13,9 +14,3 @@ class FeatchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
     return await homeRepo.fetchFeaturedBooks();
   }
 }
-
-abstract class UseCase<Type, Param> {
-  Future<Either<Failure, Type>> call([Param param]);
-}
-
-class NoParam {}
