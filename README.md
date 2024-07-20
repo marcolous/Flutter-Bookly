@@ -1,4 +1,3 @@
-
 # Bookly
 
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev/)
@@ -15,34 +14,34 @@ Bookly is a Flutter app that provides users with access to a curated selection o
 
 ## Packages Used
 
-- [cached_network_image: ^3.3.1](https://pub.dev/packages/cached_network_image)
-- [cupertino_icons: ^1.0.2](https://pub.dev/packages/cupertino_icons)
-- [dartz: ^0.10.1](https://pub.dev/packages/dartz)
-- [dio: ^5.4.3+1](https://pub.dev/packages/dio)
-- [equatable: ^2.0.5](https://pub.dev/packages/equatable)
-- [flutter: sdk: flutter](https://flutter.dev/)
-- [flutter_bloc: ^8.1.5](https://pub.dev/packages/flutter_bloc)
-- [gap: ^3.0.1](https://pub.dev/packages/gap)
-- [get_it: ^7.6.7](https://pub.dev/packages/get_it)
-- [go_router: ^13.2.4](https://pub.dev/packages/go_router)
-- [google_fonts: 6.1.0](https://pub.dev/packages/google_fonts)
-- [url_launcher: ^6.2.6](https://pub.dev/packages/url_launcher)
+- `cached_network_image`: ^3.3.1
+- `cupertino_icons`: ^1.0.2
+- `dartz`: ^0.10.1
+- `dio`: ^5.4.3+1
+- `equatable`: ^2.0.5
+- `flutter`: sdk: flutter
+- `flutter_bloc`: ^8.1.5
+- `gap`: ^3.0.1
+- `get_it`: ^7.6.7
+- `go_router`: ^13.2.4
+- `google_fonts`: 6.1.0
+- `url_launcher`: ^6.2.6
 
 ## Screenshots
 
 <div style="display: flex; flex-wrap: wrap;">
     <div style="margin: 10px;">
         <p>Main Screen</p>
-        <img src="screenshots/1.png" alt="Main Screen" width="300"/>
-        <img src="screenshots/2.png" alt="Book Details" width="300"/>
+        <img src="screenshots/1.png" alt="Main Screen" width="250"/>
+        <img src="screenshots/2.png" alt="Book Details" width="250"/>
     </div>
     <div style="margin: 10px;">
         <p>Book Details</p>
-        <img src="screenshots/4.png" alt="Preview Book" width="300"/>
+        <img src="screenshots/4.png" alt="Preview Book" width="250"/>
     </div>
     <div style="margin: 10px;">
         <p>Preview Book</p>
-        <img src="screenshots/3.png" alt="Get Book for Free" width="300"/>
+        <img src="screenshots/3.png" alt="Get Book for Free" width="250"/>
     </div>
 </div>
 
@@ -58,7 +57,7 @@ Follow these instructions to get a copy of the project running on your local mac
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/marcolous/Flutter-Bookly.git
+   git clone https://github.com/yourusername/Bookly.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -89,4 +88,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me at [louismarco226@gmail.com](mailto:louismarco226@gmail.com).
+If you have any questions or feedback, feel free to reach out to me at [your.email@example.com](mailto:your.email@example.com).
