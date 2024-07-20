@@ -19,7 +19,6 @@ Bookly is a Flutter app that provides users with access to a curated selection o
 - `dartz`: ^0.10.1
 - `dio`: ^5.4.3+1
 - `equatable`: ^2.0.5
-- `flutter`: sdk: flutter
 - `flutter_bloc`: ^8.1.5
 - `gap`: ^3.0.1
 - `get_it`: ^7.6.7
